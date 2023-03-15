@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-i*_u4@y#1_$^@b182%buxfp)=r-)cda*ih&$$x^sei49giwvp+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://sheraz-aziz-project-management.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -113,8 +113,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'Project_management/static', )
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'Project_management/static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'Project_management/static' )
 MEDIA_ROOT = '/Project_management/static/media/'
 
 MEDIA_URL = '/media/'
